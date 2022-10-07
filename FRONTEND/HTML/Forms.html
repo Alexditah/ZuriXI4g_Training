@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Forms</title>
+	</head>
+	<body>
+		<form action="">
+			<div>
+				<label for="name">Firstname</label>
+				<input type="text" name="name" id="name  " />
+			</div>
+			<div>
+				<label for="lname">Lastname</label>
+				<input type="text" name="lname" id="lname" />
+			</div>
+			<div>
+				<label for="email">Email</label>
+				<input type="email" name="email" id="" />
+			</div>
+			<div>
+				<label for="phone">Phone Number</label>
+				<input type="number" name="phone" id="" />
+			</div>
+			<div>
+				<label for="car">Choose a Car</label>
+				<select name="car" id="car">
+					<option value="1">volvo</option>
+					<option value="2">Saab</option>
+					<option value="3">Fiat</option>
+					<option selected value="4">Audi</option>
+				</select>
+			</div>
+			<div>
+				<input type="checkbox" name="car" id="car" />
+				<label for="car">I have a Car</label>
+				<br />
+				<input type="checkbox" name="bike" id="bike" />
+				<label for="bike">i have a bike</label>
+				<br />
+				<input type="checkbox" name="boat" id="boat" />
+				<label for="boat">i have a boat</label>
+			</div>
+			<div>
+				<input
+					type="text"
+					name="somthing"
+					placeholder="Write somthing about yourself" />
+			</div>
+			<div>
+				<p>Whats your favorite language</p>
+				<br />
+				<input type="radio" name="lang" id="" />
+				<label for="CSS">CSS</label> <br />
+				<input type="radio" name="lang" id="" />
+				<label for="html">HTML</label><br />
+				<input type="radio" name="lang" id="" />
+				<label for="javascript">JAVA</label>
+			</div>
+			<div>
+				<p>upload file</p>
+				<label for="upload">upload a document</label>
+				<input type="file" name="upload" id="" />
+			</div>
+			<br />
+			<div>
+				<textarea name="" id="" cols="30" rows="10">speak </textarea>
+			</div>
+			<div>
+				<input type="reset" value="reset" />
+			</div>
+			<div><input type="submit" value="submit" /></div>
+		</form>
+	</body>
+</html>
