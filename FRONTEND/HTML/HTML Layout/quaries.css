@@ -1,0 +1,46 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: blue;
+	color: aliceblue;
+}
+/* not using flex nor grid */
+.column {
+	width: 25%;
+	padding: 20px;
+	float: left;
+}
+
+/* media quarries to change background at different screen dimensions  */
+@media screen and (max-width: 1000px) {
+	body {
+		background-color: yellow;
+		color: black;
+	}
+	.column {
+		width: 50%;
+	}
+}
+/* setting a max  and min width to constrict the css effect to a particular dimension, once it reaches the min width the previous css takes effect again*/
+@media screen and (max-width: 600px) and (min-width: 400px) {
+	body {
+		background-color: brown;
+		color: black;
+	}
+	.column {
+		width: 100%;
+	}
+}
+/* if you do not want to use media quarries in the same css file  you can call add to the css linking on the html file by  */
+
+/* for landscape ( for when width s higher than height so basically a rectangle */
+@media only screen and (orientation: landscape) {
+	body {
+		background-color: chartreuse;
+		color: black;
+	}
+}
