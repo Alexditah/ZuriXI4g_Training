@@ -1,0 +1,104 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+body {
+	background-color: hsl(0, 0%, 95%);
+	display: flex;
+
+	margin: auto;
+	align-items: center;
+	width: 1440px;
+	justify-content: center;
+	height: 100vh;
+}
+.head {
+	font-family: "Big Shoulders Display";
+	font-weight: 700;
+	color: hsl(0, 0%, 95%);
+}
+.suv {
+	padding: 30px;
+	width: 20%;
+	border-radius: 5px;
+	font-size: 15px;
+	height: 45vh;
+}
+p {
+	font-family: "Lexend Deca";
+	font-weight: 400;
+	font-size: 15px;
+	color: hsla(0, 0%, 100%, 0.75);
+}
+button {
+	border-radius: 30px;
+	padding: 10px;
+	margin-top: 30px;
+	background-color: hsl(0, 0%, 95%);
+	font-family: "Lexend Deca";
+	font-weight: 400;
+	font-size: 15px;
+}
+.bu:hover {
+	color: white;
+}
+
+.grid {
+	align-self: flex-start;
+	color: rgb(99, 13, 13);
+	background-color: aquamarine;
+}
+
+@media screen and (max-width: 500px) and (min-width: 375px) {
+	body {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+}
+/* styling for grid.html */
+* {
+	margin: 0;
+	padding: 0;
+}
+.body {
+	background-color: black;
+	/* display: flex; */
+	place-items: center;
+	/* min-height: 100vh; */
+}
+main {
+	display: grid;
+	/* the grid template helps arrange the labeled grid areas into rows and columns grid area a takes two row spaces and c  takes up 2 column spaces, the ' seprates the rows  */
+	grid-template-areas: "a a a b" "a a a b" "c c d d  " "c c e e";
+	gap: 20px;
+	width: 50%;
+	margin: auto;
+	height: 50%;
+}
+main div {
+	padding: 2em;
+	text-align: center;
+}
+.item-a {
+	background-color: orangered;
+	grid-area: a;
+}
+.item-b {
+	background-color: peru;
+	grid-area: b;
+}
+.item-c {
+	background-color: green;
+	grid-area: c;
+}
+.item-d {
+	background-color: aqua;
+	grid-area: d;
+}
+.item-e {
+	background-color: aqua;
+	grid-area: e;
+}
