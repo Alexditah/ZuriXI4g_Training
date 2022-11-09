@@ -48,34 +48,53 @@ if (Username == "") {
 console.log("byebye");
 
 //  no codition is true
-let userName = 'shola'
-if(userName == ''){console.log('failed')}
-else if( userName == 'bolu'){console.log('wrong')}
-else if(userName == 'tolu'){console.log('also wrong')}
-else{console.log('please input correct user')}
-console.log('enter')
+let userName = "shola";
+if (userName == "") {
+	console.log("failed");
+} else if (userName == "bolu") {
+	console.log("wrong");
+} else if (userName == "tolu") {
+	console.log("also wrong");
+} else {
+	console.log("please input correct user");
+}
+console.log("enter");
 
 // typeof can be used to check the datatype of a value
-typeof 'tolu'
+typeof "tolu";
 
 //  logical or boolean operators
-let personA = 'peter'
-let personB = 'paul'
+let personA = "peter";
+let personB = "paul";
 
-if(personA === 'peter' && personB ==='paul'){console.log('ok')}
-if(personA === 'peter' && personB ==='pau'){console.log('ok')}
-if(personA === 'peter' || personB ==='pau'){console.log('ok')}
-if(personA === 'peter' || personB ==='paul'){console.log('ok')}
+if (personA === "peter" && personB === "paul") {
+	console.log("ok");
+}
+if (personA === "peter" && personB === "pau") {
+	console.log("ok");
+}
+if (personA === "peter" || personB === "pau") {
+	console.log("ok");
+}
+if (personA === "peter" || personB === "paul") {
+	console.log("ok");
+}
 
 // for loop you initialize; add condition; then update;
-let num = 0
+let num = 0;
 
-for(let i = 0; i < 11; i += 1){console.log(i)}
+for (let i = 0; i < 11; i += 1) {
+	console.log(i);
+}
 // to add the number together the variable num starts with 0 and as it keeps increasing as it is added to each no
-for(let i = 0; i < 11; i += 1){num += i}
+for (let i = 0; i < 11; i += 1) {
+	num += i;
+}
 console.log(num);
 
-// while block/loop
-let i = 1
-while( i < 10) { console.log(i); i++;
+// while block/loop if false it ll keepdisplaying code in bracket
+let i = 1;
+while (i < 10) {
+	console.log(i);
+	i++;
 }
