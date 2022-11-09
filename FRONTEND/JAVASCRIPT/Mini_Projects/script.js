@@ -83,6 +83,7 @@ function getUserDetails() {
 	}
 
 	userDetailsDatabase["password"] = password;
+
 	// console.log(validatePassword(password));
 
 	// for confirm password
@@ -92,10 +93,10 @@ function getUserDetails() {
 		return;
 	}
 	function validateConfirmPassword(confirmPassword) {
-		if (confirmPassword == password) {
-			return true;
-		} else {
+		if (confirmPassword != password) {
 			return false;
+		} else {
+			return true;
 		}
 	}
 
